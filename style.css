@@ -66,9 +66,10 @@ button:hover {
 .box div {
    position: absolute;
    width: 60px;
+   border-radius: 20px;
    height: 60px;
    background-color: transparent;
-   border: 6px solid rgba(215, 214, 214, 0.418);
+   border: 6px solid rgba(202, 202, 202, 0.418);
 }
 
 .box div:nth-child(1) {
