@@ -3,6 +3,7 @@
 body {
    margin: 0;
    padding: 0;
+   color:#383838;
 
    font-family: "Monserrat", sans-serif;
    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
@@ -12,20 +13,44 @@ li, a, button {
    font-family: "Montserrat", sans-serif;
    font-weight: 500;
    font-size: 16px;
-   color: #edf0f1;
+   color: #eae0da;
    text-decoration: none;
 }
 
-header {
-   background: linear-gradient(120deg, rgba(63, 63, 63, 0.522), rgba(118, 118, 118, 0.522), rgba(102, 102, 102, 0.522));
+header.light-theme {
+   background: linear-gradient(120deg, rgb(187, 161, 161, 0.699), rgba(181, 164, 164, 0.792) 100%);
    display: flex;
    justify-content: flex-end;
    align-items: center;
    padding: 30px 10%;
 }
 
+header.dark-theme {
+   background: linear-gradient(120deg, rgba(202, 182, 240, 0.802), rgba(187, 162, 220, 0.72) 100%);
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 30px 10%;
+}
+
+.light-theme {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   background: linear-gradient(120deg, rgb(234, 199, 199), rgb(252, 202, 202) 100%);
+}
+
+.dark-theme {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   background: linear-gradient(120deg, rgb(202, 182, 240), rgb(187, 162, 220) 100%);
+}
+
 .nav-links {
-   list-style: none;;
+   list-style: none;
 }
 
 .nav-links li {
@@ -38,38 +63,31 @@ header {
 }
 
 .nav-links li a:hover {
-   color: #0088a9
+   color: rgb(65, 68, 69);
 }
 
 button {
    padding: 9px 25px;
-   background-color: rgb(0, 139, 169, 1);
+   background-color: rgb(160, 195, 210);
    border: none;
    border-radius: 50px;
    cursor: pointer;
-   transition: all 3.0s ease 0s;
+   transition: all 0.15s ease 0s;
 }
 
 button:hover {
-   background-color: rgb(0, 139, 169, 0.8);
+   background-color: #F7F5EB;
+   color: rgb(65, 68, 69);
 }
 
 /* Animation section */
-.wrapper {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
-   background: linear-gradient(90deg, rgba(63, 63, 63, 0.782), rgba(118, 118, 118, 0.733), rgba(102, 102, 102, 0.93) 100%);
-}
-
 .box div {
    position: absolute;
    width: 60px;
    border-radius: 20px;
    height: 60px;
    background-color: transparent;
-   border: 6px solid rgba(202, 202, 202, 0.418);
+   border: 6px solid rgba(160, 195, 210);
 }
 
 .box div:nth-child(1) {
