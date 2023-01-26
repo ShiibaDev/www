@@ -1,5 +1,5 @@
 // wait until the elements load
-document.addEventListener('DOMContentLoaded',() => {
+document.addEventListener('DOMContentLoaded',function() {
    const themeButton = document.querySelector("#Change-Theme");
    const body = document.querySelector("#wrapper");
    const header = document.querySelector("header");
@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded',() => {
       body.classList.add(localStorage.getItem("theme"));
    }
 
-   themeButton.addEventListener("click", () => {
+   themeButton.addEventListener("click", function() {
+      themeButton.classList.toggle("light-theme");
+      themeButton.classList.toggle("dark-theme");
       body.classList.toggle("light-theme-wrapper");
       body.classList.toggle("dark-theme-wrapper");
       header.classList.toggle("light-theme");
