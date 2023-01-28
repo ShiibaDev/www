@@ -1,0 +1,6 @@
+window.onload = () => {
+   Objectshow ={
+      
+   }
+
+}
