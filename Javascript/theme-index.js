@@ -1,9 +1,10 @@
 // wait until the elements load
 document.addEventListener('DOMContentLoaded',function() {
-   const themeButton = document.querySelector("#Change-Theme");
-   const body = document.querySelector("#wrapper");
-   const header = document.querySelector("#Tab-managerS");
-   const links = document.querySelectorAll("a");
+   const themeButton = document.getElementById("Change-Theme");
+   console.log(themeButton);
+   const body = document.getElementById("wrapper");
+   const header = document.getElementById("Tab-manager");
+   const links = document.getElementById("ShibaDev-github")
 
    // Check if there's a theme saved in local storage and apply it
    if (localStorage.getItem("theme")) {
@@ -11,10 +12,12 @@ document.addEventListener('DOMContentLoaded',function() {
    }
 
    themeButton.addEventListener("click", function() {
+      themeButton.innerHTML = "Light Mode";
+      themeButton.innerHTML = "Dark Mode";
       // Button color scheme.
       themeButton.classList.toggle("light-theme");
       themeButton.classList.toggle("dark-theme");
-      //Wrapper
+      // Wrapper
       body.classList.toggle("light-theme-wrapper");
       body.classList.toggle("dark-theme-wrapper");
       // Header

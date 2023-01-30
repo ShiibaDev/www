@@ -1,6 +1,0 @@
-window.onload = () => {
-   Objectshow ={
-      
-   }
-
-}
