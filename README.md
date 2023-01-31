@@ -13,4 +13,6 @@
 
 <p align="left">This repository is my website.<br><br>Is still on heavy development to improve style, functions and color palette.</p>
 
+<p align="left">This branch is exclusive made for testing and production, to move into gh-page and master. Just like a bridge</p>
+
 ###
