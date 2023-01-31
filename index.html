@@ -21,17 +21,17 @@
 </head>
 <body>
     <!--Background-->
-    <div id="wrapper" class="light-theme-wrapper">
-        <header id="Tab-manager" class="light-theme">
-            <nav>
+    <div id="wrapper" class="light-theme">
+        <header class="light-theme" id="tab-manager">
+            <nav id="navigation">
                 <!-- <img src="" alt="Logo-ShibaCoder"> -->
-                <ul class="nav-links">
-                    <li><a class="light-theme" href="#Home" id="_Home">Home</a></li>
-                    <li><a class="light-theme" href="#About-ShibaDev" id="_About-Shibadev">About ShibaDev</a></li>
-                    <li><a class="light-theme" href="#Plugins" id="_Plugins">Plugins</a></li>
-                    <li><a class="light-theme" href="#Contact">Contact</a></li>
-                    <li><a class="light-theme" href="#More-Projects" id="_More-Projects">Other Projects from ShibaDev</a></li>
-                    <button class="light-theme" id="Change-Theme">Dark Theme</button>
+                <ul id="nav-links" class="light-theme">
+                    <li><a href="#Home" id="Deftab" class="tabs" onclick="openMenu(event, 'Home')">Home</a></li>
+                    <li><a href="#About-ShibaDev" class="tabs" onclick="openMenu(event, 'About-ShibaDev')">About Shibadev</a></li>
+                    <li><a href="#Plugins" class="tabs" onclick="openMenu(event, 'Plugins')">Plugins</a></li>
+                    <li><a href="#Contact" class="tabs" onclick="openMenu(event, 'Contact')">Contact</a></li>
+                    <li><a href="#More-Projects" class="tabs" onclick="openMenu(event, 'More-Projects')">Other Projects from ShibaDev</a></li>
+                    <button class="light-theme" id="Change-Theme">Change Theme</button>
                 </ul>
             </nav>
         </header>
@@ -40,7 +40,7 @@
             <p id="Main-projects"><strong>Main Projects</strong></p>
             <div id="Main_Projects">
                 <p><strong>Introduction to Shibacoder</strong></p>
-                <p>Shibacoder is a bot made for developers, you share github links, code, trello, etc. With higher details
+                <p>Shibacoder is a bot made for developers, you share github links, code, trello, etc. With higher details, all you need is to give permission to the bot to use your github
                     you can get tools to automatize activities, like creating projects or organizing
                 </p>
             </div>
@@ -56,7 +56,12 @@
             <p>To install plugins in Visual Studio code, you can go to <a href="http://https://marketplace.visualstudio.com/vscode"></a>, or just go to extensions in Visual Studio Code</p>
             <h2>Themes</h2>
             <p>ShibaDev use <a href="https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme">Bearded</a> theme and Icon theme</p>
+            <p>This theme is a package, got multiple themes and is very comfortable to use and read.</p>
         </div>
     </div>
+    <script>
+        // Default tab
+            document.getElementById("Deftab").click();
+    </script>
 </body>
 </html>

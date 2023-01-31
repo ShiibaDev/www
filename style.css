@@ -1,14 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
 :root {
+   /*Wrapper / Background => */
    --dark-theme-background-color: linear-gradient(120deg, rgb(24, 22, 56), rgb(21, 23, 68) 100%);
+   
+   /*Header => */
    --dark-theme-header-color: linear-gradient(120deg, rgba(30, 0, 83, 0.802), rgba(51, 37, 69, 0.72) 100%);
 
+   /*Styled font => */
+   --Stl-font: CartographCF Nerd Font;
+   
+   /*Color Palette dark-theme (beta) => */
    --ultra-red: #ff6978ff;
    --languid-lavender: #ccc9e7ff;
    --sonic-silver: #6c6f7dff;
    --gunmetal: #2e3138ff;
    --black: #000000ff;
+
+   /*Font and padding => */
+   --font-size: 14px;
+   --default-font: "Monserrat", sans-serif;
+
+   --padding: 1px;
+   --marging: 1px;
+
+   --ligatures-on: common-ligatures;
 }
 
 body {
@@ -23,17 +39,17 @@ body {
 }
 
 #ShibaDev-github.light-theme-Github {
-   font-family: CartographCF Nerd Font;
-   color: #383838;;
+   font-family: var(--Stl-font);
+   color: var(--black);
 }
 
 #ShibaDev-github.dark-theme-Github {
-   font-family: CartographCF Nerd Font;
-   color: #eae0da;
+   font-family: var(--Stl-font);
+   color: var(--languid-lavender);
 }
 
-.light-theme-wrapper {
-   color: #383838;
+#wrapper.light-theme {
+   color: var(--black);
    position: absolute;
    width: 100%;
    height: 100%;
@@ -41,7 +57,7 @@ body {
    background: linear-gradient(120deg, rgb(234, 199, 199), rgb(252, 202, 202) 100%);
 }
 
-.dark-theme-wrapper {
+#wrapper.dark-theme {
    color: rgb(234, 199, 199);
    position: absolute;
    width: 100%;
@@ -90,20 +106,20 @@ header.dark-theme {
    padding: 20px 10%;
 }
 
-.nav-links {
+#nav-links {
    list-style: none;
 }
 
-.nav-links li {
+#nav-links li {
    display: inline-block;
    padding: 0px 20px;
 }
 
-.nav-links li a {
+#nav-links li a {
    transition: all 0.3s ease;
 }
 
-.nav-links li a:hover {
+#nav-links li a:hover {
    color: rgb(65, 68, 69);
 }
 
@@ -112,20 +128,40 @@ button.light-theme {
    background-color: rgb(160, 195, 210);
    border: none;
    border-radius: 15px;
-   cursor: pointer;
    transition: all 0.15s ease 0s;
+   color: var(--gunmetal);
 }
 
-button.dark-theme {
+#Change-Theme.dark-theme {
    padding: 9px 25px;
    background-color: rgb(44, 42, 68);
    border: none;
    border-radius: 15px;
-   cursor: pointer;
    transition: all 0.15s ease 0s;
+   color: var(--languid-lavender);
 }
 
-button:hover {
-   background-color: #F7F5EB;
-   color: rgb(65, 68, 69);
+#Change-Theme.dark-theme:hover {
+   background-color: var(--sonic-silver);
+   color: var(--black);
+}
+
+#Change-Theme.light-theme:hover {
+   background-color: var(--black);
+   color: var(--languid-lavender);
+}
+
+a.active.dark-theme {
+   color: var(--sonic-silver);
+}
+
+a.active.light-theme {
+   color: var(--gunmetal);
+}
+
+.Menu {
+   display: none;
+   padding: var(--padding);
+   margin: var(--margin);
+   border-top: none;
 }
