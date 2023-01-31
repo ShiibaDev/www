@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="TitleDashboard">ShibacDev Portfolio</title>
+    <title id="TitleDashboard">ShibaDev Portfolio</title>
     <!--Import-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!--Local Imports-->
     <link rel="stylesheet" href="style.css">
     <script src="Javascript/theme-index.js"></script>
-    <script src="Javascript/Fade-index.js"></script>
+    <script src="Javascript/tabs-index.js"></script>
 </head>
 <body>
     <!--Background-->
@@ -22,13 +29,13 @@
                     <li><a class="light-theme" href="#Home" id="_Home">Home</a></li>
                     <li><a class="light-theme" href="#About-ShibaDev" id="_About-Shibadev">About ShibaDev</a></li>
                     <li><a class="light-theme" href="#Plugins" id="_Plugins">Plugins</a></li>
+                    <li><a class="light-theme" href="#Contact">Contact</a></li>
                     <li><a class="light-theme" href="#More-Projects" id="_More-Projects">Other Projects from ShibaDev</a></li>
-                    <li><a class="light-theme" href="#Concat">Contact</a></li>
                     <button class="light-theme" id="Change-Theme">Dark Theme</button>
                 </ul>
             </nav>
         </header>
-        <div id="Home" class="content-tab">
+        <div id="Home" class="Menu">
             <h1>Home - Shibacoder</h1>
             <p id="Main-projects"><strong>Main Projects</strong></p>
             <div id="Main_Projects">
@@ -38,15 +45,17 @@
                 </p>
             </div>
         </div>
-        <div id="About-ShibaDev">
+        <div id="About-ShibaDev" class="Menu">
             <h1>About ShibaDev</h1>
             <p><strong>Who is ShibaDev?</strong> Quick answer, just a programmer and coder.</p>
             <p>ShibaDev name is David. He's strength are web development and server side development. (He likes terminal)</p>
-            <p class="light-theme-Github" id="ShibaDev-github" >This he's github => <a class="light-theme-links" id="ShibaDev-github" href="https://github.com/ShiibaDev">github</a></p>
+            <p id="ShibaDev-github" class="light-theme-Github">This he's github => <a class="light-theme-links" id="ShibaDev-github" href="https://github.com/ShiibaDev">github</a></p>
         </div>
-        <div id="Plugins">
-            <h1>Plugins I use</h1>
-            <p>To install plugins in Visual Studio code, you can go to <a href="http://https://marketplace.visualstudio.com/vscode"p>
+        <div id="Plugins" class="Menu">
+            <h1>Plugins ShibaDev uses</h1>
+            <p>To install plugins in Visual Studio code, you can go to <a href="http://https://marketplace.visualstudio.com/vscode"></a>, or just go to extensions in Visual Studio Code</p>
+            <h2>Themes</h2>
+            <p>ShibaDev use <a href="https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme">Bearded</a> theme and Icon theme</p>
         </div>
     </div>
 </body>

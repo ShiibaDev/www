@@ -3,6 +3,12 @@
 :root {
    --dark-theme-background-color: linear-gradient(120deg, rgb(24, 22, 56), rgb(21, 23, 68) 100%);
    --dark-theme-header-color: linear-gradient(120deg, rgba(30, 0, 83, 0.802), rgba(51, 37, 69, 0.72) 100%);
+
+   --ultra-red: #ff6978ff;
+   --languid-lavender: #ccc9e7ff;
+   --sonic-silver: #6c6f7dff;
+   --gunmetal: #2e3138ff;
+   --black: #000000ff;
 }
 
 body {
@@ -18,10 +24,12 @@ body {
 
 #ShibaDev-github.light-theme-Github {
    font-family: CartographCF Nerd Font;
+   color: #383838;;
 }
 
 #ShibaDev-github.dark-theme-Github {
    font-family: CartographCF Nerd Font;
+   color: #eae0da;
 }
 
 .light-theme-wrapper {
@@ -50,7 +58,15 @@ li, a, button {
    text-decoration: none;
 }
 
-li, a, button {
+a.light-theme {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   color: #383838;
+   text-decoration: none;
+}
+
+a.dark-theme {
    font-family: "Montserrat", sans-serif;
    font-weight: 500;
    font-size: 16px;
