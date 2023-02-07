@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',function() {
    console.log(themeButton);
    const body = document.getElementById("wrapper");
    const header = document.getElementById("tab-manager");
-   const MenuList = document.getElementsByClassName("nav-links");
+   const MenuList = document.getElementById("Link");
 
    // Check if there's a theme saved in local storage and apply it
    if (localStorage.getItem("theme")) {

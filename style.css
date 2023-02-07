@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
-
+/*Variables: =>*/
 :root {
    /*Wrapper / Background => */
    --dark-theme-background-color: linear-gradient(120deg, rgb(24, 22, 56), rgb(21, 23, 68) 100%);
-   
+   --light-theme-background-color: #ffffff;
+
    /*Header => */
-   --dark-theme-header-color: linear-gradient(120deg, rgba(30, 0, 83, 0.802), rgba(51, 37, 69, 0.72) 100%);
+   --dark-theme-header-color: ;
+   --light-theme-header-color: #14213d;
 
    /*Styled font => */
    --Stl-font: CartographCF Nerd Font;
-   
-   /*Color Palette dark-theme (beta) => */
-   --ultra-red: #ff6978ff;
-   --languid-lavender: #ccc9e7ff;
-   --sonic-silver: #6c6f7dff;
-   --gunmetal: #2e3138ff;
-   --black: #000000ff;
+
+   /*Color Palette light-theme (beta) => */
+   --links: #FCA311;
+   --links-hover: #ffc261;
+   --Important-text: #000000;
+   --text: #14213D;
+
 
    /*Font and padding => */
    --font-size: 14px;
@@ -26,6 +27,8 @@
 
    --ligatures-on: common-ligatures;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
 body {
    margin: 0;
@@ -40,7 +43,7 @@ body {
 
 #ShibaDev-github.light-theme-Github {
    font-family: var(--Stl-font);
-   color: var(--black);
+   color: var(--Important-text);
 }
 
 #ShibaDev-github.dark-theme-Github {
@@ -54,7 +57,7 @@ body {
    width: 100%;
    height: 100%;
    overflow: hidden;
-   background: linear-gradient(120deg, rgb(234, 199, 199), rgb(252, 202, 202) 100%);
+   background: var(--light-theme-background-color);
 }
 
 #wrapper.dark-theme {
@@ -71,6 +74,7 @@ li, a, button {
    font-weight: 500;
    font-size: 16px;
    color: #383838;
+   cursor: pointer;
    text-decoration: none;
 }
 
@@ -90,8 +94,16 @@ a.dark-theme {
    text-decoration: none;
 }
 
+a.dark-theme:hover {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   color: #eae0da;
+   text-decoration: none;
+}
+
 header.light-theme {
-   background: linear-gradient(120deg, rgb(187, 161, 161, 0.699), rgba(181, 164, 164, 0.792) 100%);
+   background: var(--light-theme-header-color);
    display: flex;
    justify-content: flex-end;
    align-items: center;
@@ -104,6 +116,10 @@ header.dark-theme {
    justify-content: flex-end;
    align-items: center;
    padding: 20px 10%;
+}
+
+#nav-links a {
+   color: var(--links);
 }
 
 #nav-links {
@@ -120,7 +136,7 @@ header.dark-theme {
 }
 
 #nav-links li a:hover {
-   color: rgb(65, 68, 69);
+   color: var(--links-hover);
 }
 
 button.light-theme {
@@ -132,7 +148,7 @@ button.light-theme {
    color: var(--gunmetal);
 }
 
-#Change-Theme.dark-theme {
+button.dark-theme {
    padding: 9px 25px;
    background-color: rgb(44, 42, 68);
    border: none;
@@ -142,21 +158,13 @@ button.light-theme {
 }
 
 #Change-Theme.dark-theme:hover {
-   background-color: var(--sonic-silver);
-   color: var(--black);
+   background-color: var(--text);
+   color: var(--gunmetal);
 }
 
 #Change-Theme.light-theme:hover {
    background-color: var(--black);
    color: var(--languid-lavender);
-}
-
-a.active.dark-theme {
-   color: var(--sonic-silver);
-}
-
-a.active.light-theme {
-   color: var(--gunmetal);
 }
 
 .Menu {

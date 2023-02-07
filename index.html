@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="Javascript/theme-index.js"></script>
     <script src="Javascript/tabs-index.js"></script>
+    <!--Very important to note, this script below is kinda useless if you got fast internet, but helps-->
+    <script src="Javascript/Loading.js"></script>
 </head>
 <body>
     <!--Background-->
@@ -38,11 +40,19 @@
         <div id="Home" class="Menu">
             <h1>Home - Shibacoder</h1>
             <p id="Main-projects"><strong>Main Projects</strong></p>
-            <div id="Main_Projects">
-                <p><strong>Introduction to Shibacoder</strong></p>
-                <p>Shibacoder is a bot made for developers, you share github links, code, trello, etc. With higher details, all you need is to give permission to the bot to use your github
-                    you can get tools to automatize activities, like creating projects or organizing
-                </p>
+            <ul>
+                <li><a href="#Shibacoder">Shibacoder</a></li>
+                <li><a href="#Crystal_Bird">Crystal Bird</a></li>
+            </ul>
+            <div id="Shibacoder">
+                <h1><strong>Featured project:</strong></h1>
+                <p><strong></strong></p>
+                <nav id="Shibacoder-documenta">
+                    <ul id="documentation-subtopics">
+                        <li><a href="#What-is-Shibacoder">What is Shibacoder</a></li>
+                        <li><a href="#Status-Shibacoder">Status</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <div id="About-ShibaDev" class="Menu">
