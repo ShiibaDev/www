@@ -11,6 +11,7 @@
 
 ###
 
+<p><strong>Quick update</strong>, I am updating the portfolio with bootstrap 5, but gonna be delayed by a task I need to do due tomorrow.
 <p align="left">This repository is my website.<br><br>Is still on heavy development to improve style, functions and color palette.</p>
 
 ###
